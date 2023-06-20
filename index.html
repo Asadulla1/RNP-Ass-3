@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Click anywhere on the page, press any key, and move the mouse over the
+      image.
+    </p>
+    <img
+      src="https://c4.wallpaperflare.com/wallpaper/203/69/102/halo-armor-infinite-343-industries-halo-infinite-hd-wallpaper-preview.jpg"
+      alt=""
+      onmouseover="handleImageMouseOver(event)"
+    />
+    <br />
+    <button onclick="handleClick()">Click Me</button>
+    <p id="myParagraph">Initial Text</p>
+    <br />
+    <br />
+    <h1>Form Validation</h1>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+      /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="error-container" class="error"></div>
+    <br /><br />
+    <h1>Add CSS Class</h1>
+    <button onclick="addHighlightClass()">Add Highlight Class</button>
+    <p id="myParagraph2">This is a paragraph.</p>
+    <br /><br />
+    <h1>Create Element and Append</h1>
+    <ul id="myList"></ul>
+    <button onclick="createListItems()">Create List Items</button>
+    <br /><br /><br />
+    <h1>Change Image Source</h1>
+    <img
+      id="myImageSrc"
+      src="https://c4.wallpaperflare.com/wallpaper/321/392/1005/halo-halo-infinite-e32019-xbox-xbox-one-hd-wallpaper-preview.jpg"
+      alt="Original Image"
+    />
+    <br />
+    <button onclick="changeImageSource()">Change Image Source</button>
+    <br /><br />
+    <h1>DOM Query Selector</h1>
+    <p>This is a normal paragraph.</p>
+    <p class="highlight2">This paragraph should have red text color.</p>
+    <p id="special">This paragraph has an ID but no specific class.</p>
+    <p class="highlight2">Another paragraph with red text color.</p>
+    <button onclick="changeTextColor()">Change Text Color</button>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
